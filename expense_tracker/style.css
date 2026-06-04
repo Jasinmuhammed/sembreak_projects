@@ -127,7 +127,7 @@ h2{
 }
 .transaction{
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items:center;
     padding:1rem 1.2rem;
     margin-bottom:12px;
@@ -158,10 +158,10 @@ h2{
 .transaction.income{
     border-right-color:#059669;
 }
-.transaction.expenses{
+.transaction.expense{
     border-right-color:#e40f0f;
 }
-.transaction.delete-btn{
+.transaction .delete-btn{
     background:none;
     border:none;
     color:red;
@@ -174,7 +174,7 @@ h2{
     margin-left:12px;
 }
 
-.transaction:hover.delete-btn{
+.transaction:hover .delete-btn{
     opacity:1;
 }
 .transaction.delete-hover{
@@ -238,7 +238,7 @@ button[type="submit"]{
     font-size:1rem;
     font-weight:500;
     transition:all 0.2s ease;
-    box-shadow:0 4px 12px rgba(102,126,234,0.2);
+    box-shadow:0 6px 16px rgba(102,126,234,0.3);
     margin-top:auto;
 }
 
@@ -251,7 +251,7 @@ button[type="submit"]:active{
 }
 /*responsiveness*/
 @media(max-width:900px){
-    .main-content{
+    .main-container{
         grid-template-columns:1fr;
     }
     #transaction-list{
