@@ -58,7 +58,7 @@ function showSuccess(input){
     const formGroup=input.parentElement;
     formGroup.className="form-group success";
 
-    const small = formGroup.querrySelector("small");
+    const small = formGroup.querySelector("small");
     small.innerText="";
 }
 
